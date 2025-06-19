@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Opening and Closing Ranks - JoSAA</title>
+  <link rel="stylesheet" href="static/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo">🎓 COLLEGE PREDICTOR</div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Explore Your College </h1>
+      <p>Select your options to view institute </p>
+    </div>
+  </section>
+
+  <section class="predictor-form">
+    <form action="/openclose" method="POST" class="predictor-grid">
+       <div>
+        <label>Your Rank:</label>
+        <input type="number" name="rank" required>
+      </div>
+      <div>
+        <label>Round No:</label>
+        <select name="round" required>
+          <option value="">Select</option>
+          <option value="1">Round 1</option>
+          <option value="2">Round 2</option>
+          <option value="3">Round 3</option>
+          <option value="4">Round 4</option>
+          <option value="5">Round 5</option>
+        </select>
+      </div>
+	  <div>
+        <label>Quota:</label>
+        <select name="quota" required>
+          <option value="">Select</option>
+          <option value="AI">AI</option>
+          <option value="OS">OS</option>
+          <option value="HS">HS</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Institute Type:</label>
+        <select name="institute_type" required>
+          <option value="">Select</option>
+          <option value="IIT">IIT</option>
+          <option value="NIT">NIT</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Gender:</label>
+        <select name="gender" required>
+          <option value="">Select</option>
+          <option value="Gender-Neutral">Gender-Neutral</option>
+          <option value="Female-only (including Supernumerary)">Female-only</option>
+        </select>
+      </div>
+
+     <div>
+        <label>Seat Type / Category:</label>
+        <select name="category" required>
+          <option value="">Select</option>
+          <option value="OPEN">OPEN</option>
+          <option value="EWS">EWS</option>
+          <option value="OBC-NCL">OBC-NCL</option>
+          <option value="SC">SC</option>
+          <option value="ST">ST</option>
+          <option value="OPEN (PwD)">OPEN (PwD)</option>
+          <option value="SC (PwD)">SC (PwD)</option>
+          <option value="ST (PwD)">ST (PwD)</option>
+        </select>
+      </div>
+
+      <div class="full-width">
+        <button type="submit">🔍 Search Opening & Closing Ranks</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="note">
+    <p>
+      <strong class="blue-text">Note:</strong> Opening/Closing Ranks for Open seats represent CRL.<br>
+      Category-specific ranks apply for EWS, OBC-NCL, SC, ST, and PwD categories.<br>
+    </p>
+  </section>
+
+  
+<!-- ===== Footer Section ===== -->
+<footer style="background-color: #12396d; color: white; padding: 40px 20px;">
+  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+
+    <!-- Column 1: About -->
+    <div style="flex: 1 1 200px; margin: 20px;">
+      <h4 style="color: #ffd700;">🎓 Get Your College</h4>
+      <p style="line-height: 1.6;">
+        Helping students find the right college through JoSAA, NIRF data, and expert tools like MBBS/Engineering predictors.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div style="flex: 1 1 200px; margin: 20px;">
+      <h5 style="color: #ffd700;">Quick Links</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="/searchcollege" style="color: white; text-decoration: none;">Search Colleges</a></li>
+        <li><a href="/index" style="color: white; text-decoration: none;">College Predictor</a></li>
+        <li><a href="/about" style="color: white; text-decoration: none;">About Us</a></li>
+        <li><a href="/contact" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div style="flex: 1 1 200px; margin: 20px;">
+      <h5 style="color: #ffd700;">Contact</h5>
+      <p>📧 collegesearchproject@gmail.com</p>
+      <p>📞 7462918239 / 8288980473</p>
+      <p>📍 India</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Footer Line -->
+  <div style="text-align: center; padding-top: 20px; border-top: 1px solid #ffffff33; margin-top: 20px; font-size: 0.9em;">
+    © 2025 Get Your College | Designed with by Us
+  </div>
+</footer>
+
+</body>
+</html>

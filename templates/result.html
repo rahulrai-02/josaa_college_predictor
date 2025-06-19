@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="result-card">
+            <h1>🎯 Prediction Results</h1>
+            <div class="results">
+                {{ table_html|safe }}
+            </div>
+            <a href="/index" class="back-button">🔙 Predict Again</a>
+        </div>
+    </div>
+	
+</body>
+</html>

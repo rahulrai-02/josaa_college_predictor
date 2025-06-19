@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Search</title>
+  <link rel="stylesheet" href="static/1style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <div class="navbar">
+      <div class="logo">🎓 Search Colleges </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<div class="search-container">
+
+  <form method="POST" class="search-box">
+    <input type="text" name="college_name" placeholder="Search Colleges..." required>
+    <button type="submit">Search</button>
+  </form>
+  
+
+  
+    <main class="main-results">
+{% if college_info %}
+<div style="border:1px solid #ccc; padding:10px; margin:10px 0;">
+        <h2>Results:</h2>
+        <div class="college-grid">  <!-- ADD THIS DIV FOR GRID -->
+            {% for college in college_info %}
+                <div class="college-card">
+                    <p><strong>College Name:</strong> {{ college['Name'] }}</p>
+                    <p><strong>State:</strong> {{ college['State'] }}</p>
+                    <p><strong>Website:</strong> 
+                        {% if college['Website'] %}
+                            <a href="http://{{ college['Website'] }}" target="_blank">{{ college['Website'] }}</a>
+                        {% else %}
+                            N/A
+                        {% endif %}
+                    </p>
+                    <p><strong>Year of Establishment:</strong> {{ college['Year Of Establishment'] }}</p>
+                    <p><strong>Management:</strong> {{ college['Manegement'] }}</p>
+                    <p><strong>University Name:</strong> {{ college['University Name'] }}</p>
+                    <p><strong>University Type:</strong> {{ college['University Type'] }}</p>
+                </div>
+            {% endfor %}
+        </div> <!-- CLOSE GRID DIV -->
+    {% else %}
+        {% if request.method == 'POST' %}
+            <div class="no-result">
+                <p>No College Found. Please try another name!</p>
+            </div>
+        {% endif %}
+    {% endif %}
+	</div>
+  </main>
+  </div>
+
+</div>
+
+</body>
+<!-- ===== Footer Section ===== -->
+<footer style="background-color: #12396d; color: white; padding: 40px 20px;">
+  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1200px; margin: auto;">
+
+    <!-- Column 1: About -->
+    <div style="flex: 1 1 200px; margin: 20px;">
+      <h4 style="color: #ffd700;">🎓 Get Your College</h4>
+      <p style="line-height: 1.6;">
+        Helping students find the right college through JoSAA, NIRF data, and expert tools like MBBS/Engineering predictors.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div style="flex: 1 1 200px; margin: 20px;">
+      <h5 style="color: #ffd700;">Quick Links</h5>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="/" style="color: white; text-decoration: none;">Home</a></li>
+        <li><a href="/searchcollege" style="color: white; text-decoration: none;">Search Colleges</a></li>
+        <li><a href="/index" style="color: white; text-decoration: none;">College Predictor</a></li>
+        <li><a href="/about" style="color: white; text-decoration: none;">About Us</a></li>
+        <li><a href="/contact" style="color: white; text-decoration: none;">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div style="flex: 1 1 200px; margin: 20px;">
+      <h5 style="color: #ffd700;">Contact</h5>
+      <p>📧 collegesearchproject@gmail.com</p>
+      <p>📞 7462918239 / 8288980473</p>
+      <p>📍 India</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Footer Line -->
+  <div style="text-align: center; padding-top: 20px; border-top: 1px solid #ffffff33; margin-top: 20px; font-size: 0.9em;">
+    © 2025 Get Your College | Designed with by Us
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,240 @@
+/* Reset */
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background-color: #0077b6;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100vh;
+}
+
+/* Main Container */
+.search-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-box button {
+  padding: 0 30px;
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #e65c00;
+}
+
+/* Trending Section */
+.trending-section {
+  margin-top: 30px;
+}
+
+.trending-heading {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #005555;
+  font-size: 1rem;
+}
+
+.trending-list {
+  list-style: none;
+}
+
+.trending-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+
+.trending-list .tag {
+  color: #0077cc;
+  font-weight: 500;
+}
+
+/* Hover Effects */
+.trending-list li:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.search-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search-box input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #f57005;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #d95f00;
+}
+
+.main-results {
+  margin-top: 20px;
+}
+
+.college-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.college-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease;
+}
+
+.college-card:hover {
+  transform: translateY(-5px);
+}
+
+.college-card p {
+  margin: 10px 0;
+}
+
+.no-result {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #555;
+}
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.filters {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.results {
+  flex-grow: 1;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}

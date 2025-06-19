@@ -1,0 +1,139 @@
+/* General resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background-color: #0077b6;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 119, 182, 0.7), rgba(0, 119, 182, 0.7)), url('https://images.unsplash.com/photo-1573164574396-9d3b4e584f9b') center/cover no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+}
+
+/* Predictor Form */
+.predictor-form {
+  background: white;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.predictor-form form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.predictor-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.predictor-form select,
+.predictor-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.predictor-form button {
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.predictor-form button:hover {
+  background-color: #005f8a;
+}
+
+/* Note Section */
+.note {
+  max-width: 900px;
+  margin: 1rem auto;
+  padding: 1rem;
+  background-color: #e0f7fa;
+  border-left: 5px solid #0077b6;
+  font-size: 0.95rem;
+  border-radius: 8px;
+}
+
+.note p {
+  line-height: 1.5;
+}
+
+.blue-text {
+  color: #0077b6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  background: #0077b6;
+  color: white;
+}
